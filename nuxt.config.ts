@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     modules: [
+        '@nuxtjs/apollo',
         '@nuxt/image-edge',
     ],
     image: {
@@ -16,5 +17,10 @@ export default defineNuxtConfig({
         imagekit: {
             baseURL: 'https://ik.imagekit.io/goayjq27t5/'
         }
-    }
+    },
+    apollo: {
+        clients: {
+            default: 'apollo.nhost.ts'
+        },
+    },
 })
