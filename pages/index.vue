@@ -1,11 +1,9 @@
 <template>
   <div>
     <nuxt-picture src="/20220822133216_IMG_0023.JPG" sizes="sm:100vw md:50vw lg:400px" />
-    <div v-if="result && result.files">
-    <div v-for="f of result.files" :key="f.id">
+    <div v-for="f of files" :key="f.id">
       <nuxt-picture :src="`/nhost/${f.id}`" sizes="sm:100vw md:50vw lg:400px" />
       {{ f.name }}
-    </div>
     </div>
   </div>
 </template>
@@ -21,6 +19,7 @@ query files {
 }
 `
 
-const { result } = useQuery(query)
+const { data } = useAsyncQuery(query)
+const files = computed(() => data.value?.files ?? [])
 
 </script>
