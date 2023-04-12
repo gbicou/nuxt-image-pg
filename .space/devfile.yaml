@@ -30,4 +30,5 @@ attributes:
               - 'refs/heads/main'
       # run additional warmup script (IDE indexes will be built anyway)
       script: |
+        corepack enable
         pnpm install --frozen-lockfile
