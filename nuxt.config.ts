@@ -4,8 +4,8 @@ export default defineNuxtConfig({
         '@nuxt/image-edge',
     ],
     image: {
-        provider: 'imagekit',
-    //    provider: 'vercel'
+    //    provider: 'imagekit',
+    //    provider: 'vercel',
     //    dir: 'assets/images'
         imgix: {
             baseURL: 'https://vyg-g.imgix.net'
