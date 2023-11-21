@@ -8,7 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/image-edge": "1.0.0-28020728.5df24eb",
+    "@nuxt/image-edge": "1.0.0-testing",
     "@nuxtjs/apollo": "5.0.0-alpha.6",
     "nuxt": "^3.4.2",
     "vue": "^3.2.47",
