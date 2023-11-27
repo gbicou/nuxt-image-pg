@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/apollo',
-        '@nuxt/image-edge',
+        '@nuxt/image',
     ],
     image: {
     //    provider: 'imagekit',
